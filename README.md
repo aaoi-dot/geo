@@ -1,3 +1,29 @@
+The benefit comes from differences in age between items
+
+The curve only does useful work when items in the pool have meaningfully different ages. The question is how far apart loads need to be compared with the curve’s main transition, which runs from about 2.5 to 9.5 months.
+
+Six-monthly additions would work, but coarsely
+
+With a load every six months, the pool falls into tiers:
+
+Batch	Chance just after a new load	Chance just before the next load
+Newest	~97.5%	~50%
+Previous	~50%	~2.5%
+Older	~2.5%	~0%
+
+So it’s effectively a three-step system that swings a lot. Just after a load, the new batch dominates and the previous one still gets a fair share. Just before the next load, the newest batch has dropped to about 50% and anything older is essentially out.
+
+More frequent additions give a smoother curve
+
+Monthly or more often: items spread smoothly along the curve and the selection gently favours fresher items. This is what the curve is designed for.
+Quarterly: reasonable, with about four tiers across the transition.
+Six-monthly: usable, but lumpy.
+Yearly or a single load: little benefit over random selection.
+
+A rule of thumb for your notes
+
+The gap between loads should be well under the width of the transition, which is about seven months. Monthly or more frequent gets the full benefit. Weekly, which you mentioned earlier, is ideal
+
 One thing to check
 The formula as you’ve written it, 1 / (1 + e^(−k·(d − mid))) with k = 0.02, rises with age. For older items to be penalised, one of these must be true:
 
