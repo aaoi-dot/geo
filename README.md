@@ -1,3 +1,12 @@
+One thing to check
+The formula as you’ve written it, 1 / (1 + e^(−k·(d − mid))) with k = 0.02, rises with age. For older items to be penalised, one of these must be true:
+
+k is actually −0.02, or
+the exponent is e^(+k·(d − mid)), without the minus sign, or
+he calculates a penalty with the rising curve and then uses 1 − f(d) as the selection chance.
+
+All three give the same numbers as the table above. It’s worth confirming which one he uses, partly for your notes, and partly because a dropped minus sign would make the curve favour old items instead of penalising them.
+
 Good evening! Yes, that makes sense. It’s a common pattern for “pick a few things at random, but favour newer ones.”
 
 The sigmoid gives each entry a weight based on age. The curve f(x) = 1 / (1 + e^(−k·(x − mid))) is an S-shape that runs smoothly from 0 to 1:
